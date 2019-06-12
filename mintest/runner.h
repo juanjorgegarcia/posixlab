@@ -22,8 +22,9 @@ int main() {
   int pass_count = 0;
   int fd[size];
   pid_t p[size];
-  time_t begin;
-  time_t end;
+  // time_t begin;
+  // time_t end;
+  time_t begin, end;
 
   for (int i = 0; i < size; i++) {
     char b[100];
@@ -31,6 +32,8 @@ int main() {
     fd[i] = open(b, O_RDWR | O_CREAT, 0600);
 
     filho = fork();
+    // time(&begin);
+
     begin = time(NULL);
 
     if (filho == 0) {
@@ -43,7 +46,7 @@ int main() {
       //   printf("\nRESULTADO DO TEST: %d\n", all_tests[i].function());
       alarm(5);
 
-      clock_t start_time = clock();
+      // clock_t start_time = clock();
 
       if (all_tests[i].function() >= 0) {
         // clock_t close_time = clock();
@@ -69,7 +72,8 @@ int main() {
     // pid_t pid = wait(&status);
     int worked = waitpid(p[i], &status, WUNTRACED);
     end = time(NULL);
-    printf("Execution time %f\n", difftime(end, begin));
+
+    printf("Execution Time: %.2f\n", difftime(end,begin));
 
     id = i;
     // id = p[i];

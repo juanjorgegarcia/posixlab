@@ -25,7 +25,7 @@ Feito:
   chamada uma vez por função e deverá retornar um erro caso seja chamada mais de uma vez.
   - [x] O relatório de erros imprime as funções na ordem de declaração, não na ordem que foram finalizadas, e
   mostra o tempo que cada teste demorou para rodar.
-  A partir do conceito C cada uma das seguintes funcionalidades adiciona 0.25 na nota final:
+- A partir do conceito C cada uma das seguintes funcionalidades adiciona 0.25 na nota final:
   - [x] os status dos testes são impressos em cores.
   - [ ] ao passar “-html” como argumento seu programa retorna um relatório em HTML bem formatado
   - [x] (adicional ao de cima) se a saída de errros do main for redirecionada para um arquivo imprima tudo sem cores.

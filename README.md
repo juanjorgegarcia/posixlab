@@ -5,20 +5,20 @@ Juan Jorge Garcia
 gcc example.c -o example;
 
 Feito:
-  Conceito I
+  Conceito I:
   - [ ] Não entregou ou entregou o exemplo disponibilizado sem modificações
-  Conceito D
+  Conceito D:
   - [ ] Implementou algum item, mas não todos, do conceito C. Os arquivos de testes entregues não contém testes para todos os casos descritos.
-  Conceito C
+  Conceito C:
   - [x] Cada teste roda em um processo separado;
   - [x] Processos filhos rodam os testes em paralelo.
   - [x] Processo pai obtem o resultado do processo filho usando .
-  Conceito B
+  Conceito B:
   - [x] Saída dos testes é redirecionada e é impressa por inteiro ao final do teste.
   - [x] É criado um tempo de limite de execução para cada teste usando a chamada .
   - [x] O processo pai avisa quando o processo filho for terminado com erro usando uma mensagem explicativa
   com o nome do erro.
-  Conceitos B+, A, A+
+  Conceitos B+, A, A+:
   A partir do conceito B cada uma das seguintes características adiciona um ponto na nota:
   - [x] Processo original responde a Ctrl+C com uma mensagem de confirmação de saída
   - [ ] A biblioteca possui uma API para que cada teste possa modificar seu tempo limite. Ela só pode ser
